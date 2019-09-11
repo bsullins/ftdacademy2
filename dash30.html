@@ -532,7 +532,7 @@
 			<p class="seventy-percent-width">When you register you get access to all 3 courses which will enable you to chart your path to a new job in data, develop the core and tech skills to succeed in that role, and how to prepare for your interview. This is your next step towards that new career.</p>
 			<p class="above-price">$999 Regular</p>
 			<p class="price"><span class="price-value">$499</span> Limited Offer</p>
-			<a class="button-solid" target="_blank" href="https://sso.teachable.com/secure/257384/checkout/1325545/ftd-academy-program?coupon_code=FTDOPEN500O">ENROLL NOW</a>
+			<a id="enroll-btn" class="button-solid" target="_blank" href="">ENROLL NOW</a>
 		</div> <!-- end of container -->
 
 	</div> <!-- end of pricing -->
@@ -713,7 +713,37 @@
 	<script src="js/scripts.js" type="text/javascript"></script> <!-- Custom scripts -->
 
 	<script>
+
+		var getUrlParameter = function getUrlParameter(sParam) {
+		    var sPageURL = window.location.search.substring(1),
+		        sURLVariables = sPageURL.split('&'),
+		        sParameterName,
+		        i;
+
+		    for (i = 0; i < sURLVariables.length; i++) {
+		        sParameterName = sURLVariables[i].split('=');
+
+		        if (sParameterName[0] === sParam) {
+		            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+		        }
+		    }
+		};
+
 		$(function(){
+
+			var coupon = getUrlParameter('coupon_code');
+
+			if(coupon=='bea11252-4565-4d64-bfd9-5dd770610938'){
+				// discounted price
+				$("#enroll-btn").attr('href','https://sso.teachable.com/secure/257384/checkout/1325545/ftd-academy-program?coupon_code=FTDOPEN500O');
+			} else {
+				// full price
+			
+				$(".above-price").hide()
+				$(".price").html('<span class="price-value">$999</span>')
+				$("#enroll-btn").attr('href','https://learn.ftdacademy.com/purchase?product_id=1325545');
+
+			}
 
 
 		})
