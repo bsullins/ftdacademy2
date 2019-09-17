@@ -54,6 +54,20 @@
 			z-index: -1;
 			background-color: #000;
 		}
+
+		.hide {
+			display:none;
+		}
+
+
+		.co-icon{
+			max-width:200px;
+			display: block;
+			margin: auto;
+		}
+
+
+		}
 	</style>
 
 	<!-- Facebook Pixel Code -->
@@ -150,10 +164,11 @@
 							</div>
 							<div class="col-md-8">
 								<div class="embed-responsive embed-responsive-16by9 mx-auto">
-									<iframe src="https://player.vimeo.com/video/355001612?autoplay=1&muted=1&texttrack=en" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+									<iframe id="mainVid" src="https://player.vimeo.com/video/360627231?texttrack=en" width="640" height="360" frameborder="0"></iframe>
 								</div>
 
 							</div> <!-- end of col-md-6 -->
+							<buton href="#" type="button" class="btn btn-default btn-lg jsEnablePlayerVolume hide" style="margin-top:10px;">Unmute</buton>
 						</div> <!-- end of header-content-wrapper -->
 						<div class="row col-md-12">
 
@@ -164,7 +179,7 @@
 									<h5>Join students at:</h5>
 								</div>
 								<!-- netflix -->
-								<div class="col-md-2">
+								<div class="col-md-2 co-icon">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 370 100" style="enable-background:new 0 0 370 100;" xml:space="preserve">
 									<style type="text/css">
@@ -188,7 +203,7 @@
 								</div>
 
 								<!-- facebook -->
-								<div class="col-md-2">
+								<div class="col-md-2 co-icon">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 370 100" style="enable-background:new 0 0 370 100;" xml:space="preserve">
 									<style type="text/css">
@@ -224,7 +239,7 @@
 								</div>
 
 								<!-- twitter -->
-								<div class="col-md-2">
+								<div class="col-md-2 co-icon">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 370 100" style="enable-background:new 0 0 370 100;" xml:space="preserve">
 									<style type="text/css">
@@ -272,7 +287,7 @@
 								</div>
 
 								<!-- stripe -->
-								<div class="col-md-2">
+								<div class="col-md-2 co-icon">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 370 100" style="enable-background:new 0 0 370 100;" xml:space="preserve">
 									<style type="text/css">
@@ -302,7 +317,7 @@
 								</div>
 
 								<!-- firefox -->
-								<div class="col-md-2">
+								<div class="col-md-2 co-icon">
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 										 viewBox="0 0 343.01 100" style="enable-background:new 0 0 343.01 100;" xml:space="preserve">
 									<style type="text/css">
@@ -356,19 +371,19 @@
 						<div class="item active">
 							<div class="col-md-4">
 								<img class="img-circle" src="images/brian-sullivan.jpg" alt="customer testimonial">
-								<p class="mb-0">"We hired people [without a degree] that could demonstrate their curiosity in a different area. Build something on your laptop using these great resources and don't be afraid to try and break-in to a new field."</p>
+								<p class="mb-0">"We hired people without a degree that could demonstrate their curiosity in a different area"</p>
 								<h5>Brian Sullivan</h5>
 								<div class="text-muted">Netflix</div>
 							</div>
 							<div class="col-md-4">
 								<img class="img-circle" src="images/ryan-robitaille.jpg" alt="customer testimonial">
-								<p class="mb-0">"To get a job at Facebook you need basic data fluency and some form of data communication like those taught in this course."</p>
+								<p class="mb-0">"To get a job at Facebook you need basic data fluency and some form of data communication skills"</p>
 								<h5>Ryan Robitaille</h5>
 								<div class="text-muted">Facebook</div>
 							</div>
 							<div class="col-md-4">
 								<img class="img-circle" src="images/heather-torres.jpg" alt="customer testimonial">
-								<p class="mb-0">"Hands down the most important skill is being able to tell a story. Use resources like this to learn interviewing skills you need to land your next job in data."</p>
+								<p class="mb-0">"Hands down the most important skill is being able to tell a story"</p>
 								<h5>Heather Torres</h5>
 								<div class="text-muted">Lyft</div>
 							</div>
@@ -405,7 +420,7 @@
 		<div class="container">
 			<h2>Overview</h2>
 			<img class="decorative-line" src="images/decorative-line.svg" alt="decorative line">
-			<p class="seventy-percent-width"><span class="h3">In just 4 weeks</span> learn how to demonstrate your ability to deliver valuable insights using data analytics techniques. Our program takes you from absolute beginner to hireable data pro in a short time by distilling 18 years of real-world experience into 3 courses.</p>
+			<p class="seventy-percent-width"><span class="h3">In just 6 weeks</span> learn how to demonstrate your ability to deliver valuable insights using data analytics techniques. Our program takes you from absolute beginner to hireable data pro in a short time by distilling 18 years of real-world experience into 3 densely-packed courses.</p>
 			<img class="img-responsive" src="images/ben-hero-image.jpg" alt="dashboard">
 		</div> <!-- end of container -->
 	</div> <!-- end of overview -->
@@ -638,9 +653,12 @@
 	<div class="endorsement">
 		<div class="container">
 			<div class="endorsement-wrapper">
-				<p class="seventy-percent-width">Learning from Ben's training hands-on (which this program is based) gave me the skills necessary to land a job in Silicon Valley despite not having the typical background they were looking for.</p>
-				<h5>Daniel Seisun / Stripe</h5>
-				<a class="button-solid page-scroll" href="#pricing">REGISTER NOW</a>
+				<img class="img-circle col-md-2 col-md-offset-5 row" src="images/daniel-closeup.jpg">
+				<div class="col-md-12">
+					<p class="seventy-percent-width" style="font-size: 2em; font-style:normal; margin-top:10px;">"Ben gave me the skills necessary to land a job in Silicon Valley despite not having the typical background they look for"</p>
+					<h3>Daniel Seisun / Stripe</h3>
+					<a class="button-solid page-scroll" href="#pricing">REGISTER NOW</a>
+				</div>
 			</div>
 		</div> <!-- end of container -->
 	</div> <!-- end of endorsement -->
@@ -650,25 +668,25 @@
 	<div id="footer" class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<div class="footer-pane">
+				<div class="col-md-12">
+					<div class="footer-pane text-center">
 						<h4>Contact Details</h4>
 						<div class="footer-details">
 							<p>Free the Data Academy is an online program for elevating your data career</p>
 							<p><i class="fa fa-map-marker" aria-hidden="true"></i> 600 B St #300, San Diego, 92101, California, USA</p>
 							<!-- <p><i class="fa fa-phone" aria-hidden="true"><a class="phone-number" href="tel:003024630820">+30 2463 0820</a></i>&nbsp;&nbsp;<i class="fa fa-mobile" aria-hidden="true"><a class="phone-number" href="tel:003071630231">+30 7163 0231</a></i> -->
-							<i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:contact@ftdacademy.com">contact@ftdacademy.com</a></i>&nbsp;&nbsp;<i class="fa fa-chrome" aria-hidden="true"><a href="#your-link">www.ftdacademy.com</a></i></p>
+							<i class="fa fa-envelope-o" aria-hidden="true"><a href="mailto:contact@ftdacademy.com">contact@ftdacademy.com</a></i>&nbsp;&nbsp;<i class="fa fa-firefox" aria-hidden="true"><a href="#your-link">www.ftdacademy.com</a></i></p>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-md-4">
-					<h3 class="mb-o quote">Free the Data and Your Mind Will Follow</h3>
+				<!-- <div class="col-md-4">
+					<h4 class="mb-o quote">Free the Data and Your Mind Will Follow</h4>
 				</div>
 
 				<div class="col-md-4">
 					<div class="footer-pane">
-						<!-- Contact Form -->
+
 						<form id="ContactForm" data-toggle="validator">
 							<div class="form-group first">
 								<input type="text" class="form-control-input" id="cname" placeholder="Name" required>
@@ -685,7 +703,7 @@
 							</div>
 						</form>
 					</div>
-				</div>
+				</div> -->
 			</div> <!-- end of row -->
 		</div> <!-- end of container -->
 	</div> <!-- end of footer -->
@@ -729,8 +747,11 @@
 		    }
 		};
 
+
 		$(function(){
 
+
+			// update coupon
 			var coupon = getUrlParameter('coupon_code');
 
 			if(coupon=='bea11252-4565-4d64-bfd9-5dd770610938'){
@@ -738,15 +759,40 @@
 				$("#enroll-btn").attr('href','https://sso.teachable.com/secure/257384/checkout/1325545/ftd-academy-program?coupon_code=FTDOPEN500O');
 			} else {
 				// full price
-			
+
 				$(".above-price").hide()
 				$(".price").html('<span class="price-value">$999</span>')
 				$("#enroll-btn").attr('href','https://learn.ftdacademy.com/purchase?product_id=1325545');
 
 			}
 
+			// autoplay video an unmute button
+			var $video = $('#mainVid'),
+					player = new Vimeo.Player($video);
+
+		 player.setVolume(0);
+		 player.play();
+
+
+		 if (is_touch_device()) {
+			 $('.jsEnablePlayerVolume').removeClass("hide").on('click',function(e) {
+				 e.preventDefault();
+				 player.setVolume(1);
+				 $(this).remove();
+			 });
+		 }
+		 else {
+			 // $('.viewOnTouch').show();
+		 }
+
 
 		})
+
+		function is_touch_device() {
+			return 'ontouchstart' in window        // works on most browsers
+					|| navigator.maxTouchPoints;       // works on IE10/11 and Surface
+		};
+
 	</script>
 
 </body>
