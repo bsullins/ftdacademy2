@@ -60,7 +60,7 @@ Colors:
 /******************************/
 body {
 	color: #fff;
-	font: 300 16px/1.6em "Ubuntu", sans-serif;
+	font: 300 20px/1.6em "Fira Sans", sans-serif;
 }
 
 h1 {
@@ -84,7 +84,7 @@ h5 {
 }
 
 p {
-	font: 300 16px/1.6em "Ubuntu", sans-serif;
+	font: 300 20px/1.6em "Fira Sans", sans-serif;
 }
 
 p.seventy-percent-width {
